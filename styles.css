@@ -1,0 +1,295 @@
+:root {
+    /*Adventure sheet */
+    --Top1: 30vh;
+    --Top2: 34vh;
+    --Top3: 46vh;
+    --Top4: 65vh;
+    /*Monster encounters*/
+    --Top5: 27vh;
+    --Top6: 35vh;
+    --Top7: 44vh;
+    --Top8: 52vh;
+    --Top9: 61vh;
+    --Top10: 68vh;
+    --Top11: 78vh;
+    --Top12: 85vh;
+
+    --Left1: 12vh;
+    --Left2: 29.5vh;
+    --Left3: 47vh;
+    /* dice */
+    --Dice: 8vh;
+
+  }
+html ,body{
+	margin: 0px;
+}
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    right: 0.5vh;
+    top: 0.5vh;
+    height: 20vh;
+    width: 20vh;
+    z-index: 2;
+    background-color: aquamarine;
+}
+input.save{
+    position: absolute;
+    height: 2vh;
+    width: 5.25vh;
+    font-size: 1.25vh;
+    margin: 0.5vh;
+    right: 0.5vh;
+    resize: none;
+}
+input#load{
+    position: absolute;
+    height: 2vh;
+    width: 5.25vh;
+    font-size: 1.25vh;
+    margin: 0.5vh;
+    right: 6vh;
+    resize: none;
+}
+#left{
+    position: relative;
+    height: 100vh;
+    width: 71vh;
+    background-image: url("COS_adventure_sheet_optimalization.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+#right{
+    position: relative;
+    height: 100vh;
+    width: 70.5vh;
+    display: inline;
+    background-image: url("COS_adventure_sheet_optimalization.svg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    float: left;
+}
+#dice1{
+    background-image: url("Dice_background.svg");
+    top: 4vh;
+    right: 10vh;
+    height: var(--Dice);
+    width: var(--Dice);
+    position: absolute;
+    background-size: cover;
+}
+.animateIn{
+    transform: translateY(0px);
+}  
+.animateOut{
+    transform: translateY(-100%);
+}
+#dice2{
+    background-image: url("Dice_background.svg");
+    top: 4vh;
+    right: 1vh;
+    height: var(--Dice);
+    width: var(--Dice);
+    position: absolute;
+    background-size: cover;
+}
+#dots1{
+    height: var(--Dice);
+    width: var(--Dice);
+    position: absolute;
+    background-size: cover;
+}
+#dots2{
+    height: var(--Dice);
+    width: var(--Dice);
+    position: absolute;
+    background-size: cover;
+}
+#settings{
+    position: absolute;
+    top: 0.5vh;
+    left: 0.5vh;
+    height: 2.5vh;
+    width: 2.5vh;
+    cursor: pointer;
+}
+
+input.random{
+    position: absolute;
+    top: 15vh;
+    right: 5vh;
+    height: 3vh;
+    width: 9vh;
+    font-size: 1.5vh;
+    resize: none;
+}
+.default{
+    position: absolute;
+    width: 5vh;
+    height: 2.5vh;
+    font-size: 3vh;
+    background-color: transparent;
+    border: 0px solid;
+    resize: none;
+    
+
+}
+input.s0{
+    top: var(--Top1);
+    left: 22vh;
+}
+input.s1{
+    top: var(--Top2);
+    left: 18vh;
+}
+input.s2{
+    top: var(--Top1);
+    left: 40vh;
+}
+input.s3{
+    top: var(--Top2);
+    left: 35vh;
+}
+input.s4{
+    top: var(--Top1);
+    left: 55vh;
+}
+input.s5{
+    top: var(--Top2);
+    left: 52vh;
+}
+textarea.s6{
+    top: var(--Top3);
+    left: 15vh;
+    width: 14vh;
+    height: 27vh;
+    font-size: 2vh;    
+}
+textarea.s7{
+    top: var(--Top3);
+    font-size: 2vh; 
+    left: 31vh;
+    height: 9.5vh;
+    width: 31.5vh;
+}
+input.s8{
+    top: var(--Top4);
+    left: 36vh;
+}
+input.s9{
+    top: var(--Top4);
+    left: 53vh;
+}
+textarea.s10{
+    top: 79vh;
+    left: 14.5vh;
+    height: 10vh;
+    width: 48vh;
+}
+/* monster Encounters first tuple */
+input.s11{
+    top: var(--Top5);
+    left: var(--Left1);
+}
+input.s12{
+    top: var(--Top5);
+    left: var(--Left2);
+}
+input.s13{
+    top: var(--Top5);
+    left: var(--Left3);
+}
+/* monster Encounters second tuple */
+input.s14{
+    top: var(--Top6);
+    left: var(--Left1);
+}
+input.s15{
+    top: var(--Top6);
+    left: var(--Left2);
+}
+input.s16{
+    top: var(--Top6);
+    left: var(--Left3);
+}
+/* monster Encounters third tuple */
+input.s17{
+    top: var(--Top7);
+    left: var(--Left1);
+}
+input.s18{
+    top: var(--Top7);
+    left: var(--Left2);
+}
+input.s19{
+    top: var(--Top7);
+    left: var(--Left3);
+}
+/* monster Encounters fourth tuple */
+input.s20{
+    top: var(--Top8);
+    left: var(--Left1);
+}
+input.s21{
+    top: var(--Top8);
+    left: var(--Left2);
+}
+input.s22{
+    top: var(--Top8);
+    left: var(--Left3);
+}
+/* monster Encounters fifth tuple */
+input.s23{
+    top: var(--Top9);
+    left: var(--Left1);
+}
+input.s24{
+    top: var(--Top9);
+    left: var(--Left2);
+}
+input.s25{
+    top: var(--Top9);
+    left: var(--Left3);
+}
+/* monster Encounters sixth tuple */
+input.s26{
+    top: var(--Top10);
+    left: var(--Left1);
+}
+input.s27{
+    top: var(--Top10);
+    left: var(--Left2);
+}
+input.s28{
+    top: var(--Top10);
+    left: var(--Left3);
+}
+/* monster Encounters seventh tuple */
+input.s29{
+    top: var(--Top11);
+    left: var(--Left1);
+}
+input.s30{
+    top: var(--Top11);
+    left: var(--Left2);
+}
+input.s31{
+    top: var(--Top11);
+    left: var(--Left3);
+}
+/* monster Encounters eight tuple */
+input.s32{
+    top: var(--Top12);
+    left: var(--Left1);
+}
+input.s33{
+    top: var(--Top12);
+    left: var(--Left2);
+}
+input.s34{
+    top: var(--Top12);
+    left: var(--Left3);
+}

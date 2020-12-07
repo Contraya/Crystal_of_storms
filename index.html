@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>CRYSTAL OF STORMS</title>
+        <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+        <div class="sticky">
+            
+            <input class="save" type="button" value="SAVE" onclick="download('text/plain')"/>
+            <input id="load" type="file" value="LOAD" accept="text/plain" onchange="openFile(event)"/>
+            <!--<div id="settings" onclick="showMenu('list')" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                    <path d="M182.8 33.4c-15 6.2-22.8 19.4-22.8 38.7v5.7l-4.7 1.8c-2.7.9-8.6 3.4-13.2 5.5l-8.5 3.8-7.2-6.8c-8.6-8.2-15.3-11.2-25.3-11.3-14.4-.1-20 3.3-40.7 24.4-15.9 16.4-18.8 20.7-20.4 30.5-2 11.8 1.7 22.3 11.5 33.1l5.8 6.3-3.5 8.2c-2 4.5-4.3 10.3-5.2 12.8l-1.8 4.6-9.4.7c-18.6 1.3-30 8.8-35.4 23.3C0 220-.1 222 .2 246.4c.3 25.7.3 26.2 2.9 31.6 6.5 13.8 19.7 21 38.5 21h5.1l1.8 4.7c1 2.7 3.3 8.5 5.3 13l3.5 8.2-5.8 6.3C41.7 342 38 352.5 40 364.4c1.6 10 4.3 14 20.4 30.5 21.2 21.5 25.7 24.3 39.6 24.3 11.1 0 17.7-2.8 26.5-11.2l7-6.8 7 3.2a251.33 251.33 0 0 0 13.1 5.5l6.1 2.2.6 10.1c.5 8.2 1.2 11.2 3.6 16.3 3.5 7.6 9.7 13.9 17.1 17.4 5.3 2.5 6.3 2.6 25.8 2.9 11.1.2 20.2.1 20.2-.1s-.9-3.9-2-8.2c-3.5-13.5-2-25.9 4.6-38.8 3.4-6.6 8.5-12 57.5-61.2l53.7-54 7.1-29.6c7.6-31.3 8.9-34.6 16.2-41.7 6-5.9 11-8 32.4-13.8l22.3-6.3c2.1-1.2-7-8.7-13.3-11-2.9-1.1-9.7-2.4-15-2.8l-9.7-.8-2.8-7.5c-1.5-4.1-3.9-9.9-5.4-12.8l-2.7-5.4 6.9-7.3c8.5-8.9 11.3-15.3 11.3-26 0-14-4.1-20.5-26.4-42.2-13.6-13.2-19-16.7-28.3-18.2-12-1.9-22.8 1.9-33.4 11.7l-6.5 6L288 86c-3-1.5-9-4-13.2-5.5l-7.8-2.8v-9.3c0-12.9-2.3-18.9-10.4-27-9.8-9.8-12.3-10.4-42.9-10.4-24.1 0-25.4.1-30.9 2.4zM238.7 154c34.8 9.4 62.9 40.6 68.4 76 1.6 10.7.6 30.6-2 40-12.5 43.9-55 73.1-100.2 68.9-58.7-5.4-98.4-64.4-81.3-120.9 14.8-48.9 66-77.3 115.1-64zM435 217.6c-33.5 8.6-46.6 12.6-50.3 15.1-6.5 4.5-8.2 8.7-15.8 40.9l-7.1 29.9-54.9 55c-59.6 59.8-58.6 58.7-60.8 72.2-.9 5.9-.3 14.5 1.6 20.3 3.2 9.9 13.8 21.5 24.1 26.3 7.8 3.7 20 4.8 28 2.7 11.5-3.2 12.4-3.9 69.2-60.6l54.5-54.4 29.5-7.1c16.1-3.9 31-7.9 32.9-8.9 3.7-1.9 6.7-4.7 9.4-9 2.7-4.2 16.7-58.2 16.7-64.3 0-9.4-5.2-18-10.9-18-2.8 0-5.1 1.9-17.9 14.5-15 14.9-18 17.1-24.4 18.3-10.7 2-22.8-8.6-22.8-20 0-6.7 2.7-10.6 18-26.1 13.2-13.2 15-15.4 15-18.3 0-4.3-4.5-8.6-11.3-10.6-6.7-2-7.1-2-22.7 2.1zM374.3 351c3 2.4 4.1 6.3 2.6 9.3-1.6 3.1-49.8 51.5-53.1 53.3-3.5 1.8-7.2.9-9.8-2.3-4.2-5.4-3.9-5.8 25.2-35 29.2-29.3 29.7-29.6 35.1-25.3zm-71.6 69c5.8 3.5 7.3 10.4 3.4 15.9-4 5.5-11.4 5.9-16.8.9-5-4.7-3.3-14.1 3-17.2 4.2-2.1 6.6-2 10.4.4z"/>
+                </svg>
+            </div>
+            <div id="list" style="display: none;">
+                <ul>Dots color</ul>
+                <ul>Dice color</ul>
+                <ul>Theme</ul>
+            </div> -->
+            <div id="dice1">
+                <div id="dots1"></div>
+            </div>
+            <div id="dice2">
+                <div id="dots2"></div>
+            </div>
+            <input class="random"type="button" value="RANDOM" onclick="random()"/>
+        </div>
+        <div id="left">
+            <input id="0" class="s0 default" type="text" value='0'/>
+            <input id="1" class="s1 default" type="text" value='0'/>
+            <input id="2" class="s2 default" type="text" value='0'/>
+            <input id="3" class="s3 default" type="text" value='0'/>
+            <input id="4" class="s4 default" type="text" value='0'/>
+            <input id="5" class="s5 default" type="text" value='0'/>
+
+            <textarea id="6" class="s6 default"></textarea>
+            <textarea id="7" class="s7 default"></textarea>
+
+            <input id="8" class="s8 default" type="text" value='0'/>
+            <input id="9" class="s9 default" type="text" value='0'/>
+            <textarea id="10" class="s10 default"></textarea>
+
+        </div>
+        <div id="right">
+            <!-- monster Encounters first tuple -->
+            <input id="11" class="s11 default" type="text" value='0'/>
+            <input id="12" class="s12 default" type="text" value='0'/>
+            <input id="13" class="s13 default" type="text" value='0'/>
+            <!-- monster Encounters second tuple -->
+            <input id="14" class="s14 default" type="text" value='0'/>
+            <input id="15" class="s15 default" type="text" value='0'/>
+            <input id="16" class="s16 default" type="text" value='0'/>
+            <!-- monster Encounters third tuple -->
+            <input id="17" class="s17 default" type="text" value='0'/>
+            <input id="18" class="s18 default" type="text" value='0'/>
+            <input id="19" class="s19 default" type="text" value='0'/>
+            <!-- monster Encounters fourth tuple -->
+            <input id="20" class="s20 default" type="text" value='0'/>
+            <input id="21" class="s21 default" type="text" value='0'/>
+            <input id="22" class="s22 default" type="text" value='0'/>
+            <!-- monster Encounters fifth tuple -->
+            <input id="23" class="s23 default" type="text" value='0'/>
+            <input id="24" class="s24 default" type="text" value='0'/>
+            <input id="25" class="s25 default" type="text" value='0'/>
+            <!-- monster Encounters sixth  tuple -->
+            <input id="26" class="s26 default" type="text" value='0'/>
+            <input id="27" class="s27 default" type="text" value='0'/>
+            <input id="28" class="s28 default" type="text" value='0'/>
+            <!-- monster Encounters seventh tuple -->
+            <input id="29" class="s29 default" type="text" value='0'/>
+            <input id="30" class="s30 default" type="text" value='0'/>
+            <input id="31" class="s31 default" type="text" value='0'/>
+            <!-- monster Encounters eight tuple -->
+            <input id="32" class="s32 default" type="text" value='0'/>
+            <input id="33" class="s33 default" type="text" value='0'/>
+            <input id="34" class="s34 default" type="text" value='0'/>
+
+        </div>        
+    </body>
+    <script src="main.js"></script>
+</html>
